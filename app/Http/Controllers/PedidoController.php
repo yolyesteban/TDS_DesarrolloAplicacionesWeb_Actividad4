@@ -42,8 +42,8 @@ class PedidoController extends Controller
     {
         $pedido = new Pedido();
         $pedido->cantidad = $request->cantidad;
-        $pedido->idProducto = $request->idProducto;
-        $pedido->idEmpleado = $request->idEmpleado;
+        $pedido->codigoProducto = $request->codigoProducto;
+        $pedido->codigoEmpleado = $request->codigoEmpleado;
 
         $pedido->save();
 
@@ -85,8 +85,8 @@ class PedidoController extends Controller
     {
         $pedido = Pedido::find($request->codigoPedido);
         $pedido->cantidad = $request->cantidad;
-        $pedido->idProducto = $request->idProducto;
-        $pedido->idEmpleado = $request->idEmpleado;
+        $pedido->codigoProducto = $request->codigoProducto;
+        $pedido->codigoEmpleado = $request->codigoEmpleado;
 
         $pedido->save();
 
