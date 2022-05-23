@@ -87,7 +87,6 @@ class PedidoController extends Controller
         $pedido->cantidad = $request->cantidad;
         $pedido->codigoProducto = $request->codigoProducto;
         $pedido->codigoEmpleado = $request->codigoEmpleado;
-
         $pedido->save();
 
         return redirect('/pedidos');
